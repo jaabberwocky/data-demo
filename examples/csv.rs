@@ -1,7 +1,7 @@
 use polars::prelude::*;
 
 fn main() {
-    let df = CsvReader::from_path("examples/data.csv")
+    let df = CsvReader::from_path("data/data.csv")
         .unwrap()
         .finish()
         .unwrap();
