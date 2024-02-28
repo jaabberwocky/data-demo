@@ -11,7 +11,6 @@ struct Person {
 fn main() -> Result<()> {
     let conn = Connection::open("data/sqlite.db")?;
 
-    // drop table first
     conn.execute("DROP TABLE IF EXISTS person", ())?;
     conn.execute(
         "CREATE TABLE person (
