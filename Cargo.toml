@@ -6,5 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+anyhow = "1.0.80"
 polars = { version = "0.37.0", features = ["lazy"] }
 rusqlite = "0.31.0"
